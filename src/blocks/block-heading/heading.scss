@@ -1,0 +1,11 @@
+.standart-heading {
+	.standart-heading__wrapper {
+		text-align: center;
+		width: 100%;
+		.standart-heading__text {
+			text-transform: uppercase;
+			font-size: rem(35.12);
+			letter-spacing: 2px;
+		}
+	}	
+}

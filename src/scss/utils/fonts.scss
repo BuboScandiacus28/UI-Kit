@@ -1,24 +1,32 @@
 @font-face {
-    font-family: 'MyriadProRegular';
-   	src: url('../fonts/MyriadProRegular.eot');
-    src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'),
-    		 url('../fonts/MyriadProRegular.woff') format('woff'),
-   	     url('../fonts/MyriadProRegular.ttf') format('truetype'),
-   	     url('../fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+    font-family: 'lato-regular';
+   	src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot') format('embedded-opentype'),
+    		 url('../fonts/lato-regular.woff') format('woff'),
+   	     url('../fonts/lato-regular.ttf') format('truetype'),
+   	     url('../fonts/lato-regular.svg#lato-regular') format('svg');
 }
 @font-face {
-    font-family: 'MyriadProBold';
-    src: url('../fonts/MyriadProBold.eot');
-    src: url('../fonts/MyriadProBold.eot') format('embedded-opentype'),
-    		 url('../fonts/MyriadProBold.woff') format('woff'),
-         url('../fonts/MyriadProBold.ttf') format('truetype'),
-         url('../fonts/MyriadProBold.svg#MyriadProBold') format('svg');
+    font-family: 'lato-light';
+    src: url('../fonts/lato-light.eot');
+    src: url('../fonts/lato-light.eot') format('embedded-opentype'),
+    		 url('../fonts/lato-light.woff') format('woff'),
+         url('../fonts/lato-light.ttf') format('truetype'),
+         url('../fonts/lato-light.svg#lato-light') format('svg');
 }
 @font-face {
-    font-family: 'MyriadProLightSemiExt';
-    src: url('../fonts/MyriadProLightSemiExt.eot');
-    src: url('../fonts/MyriadProLightSemiExt.eot') format('embedded-opentype'),
-    		 url('../fonts/MyriadProLightSemiExt.woff') format('woff'),
-         url('../fonts/MyriadProLightSemiExt.ttf') format('truetype'),
-         url('../fonts/MyriadProLightSemiExt.svg#MyriadProLightSemiExt') format('svg');
+    font-family: 'lato-bold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot') format('embedded-opentype'),
+             url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#lato-bold') format('svg');
+}
+@font-face {
+    font-family: 'lato-black';
+    src: url('../fonts/lato-black.eot');
+    src: url('../fonts/lato-black.eot') format('embedded-opentype'),
+    		 url('../fonts/lato-black.woff') format('woff'),
+         url('../fonts/lato-black.ttf') format('truetype'),
+         url('../fonts/lato-black.svg#lato-black') format('svg');
 }

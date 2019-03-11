@@ -1,0 +1,7 @@
+.red_theme {
+	background-color: $primary-red;
+}
+
+.red_theme > * {
+	color: $default-color;
+}

@@ -1,0 +1,14 @@
+.small_button {
+	width: 16.9%;
+	display: flex;
+	.standart-btn__wrapper {
+		align-self: flex-end;
+		width: 100%;
+		padding: 3% 0;
+		.standart-btn__link {
+			padding: 3% 0;
+			letter-spacing: 1px;
+		}
+	}
+} 
+

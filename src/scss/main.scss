@@ -37,7 +37,7 @@ body {
 
 *, *:before, *:after { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0; font-family: $blackFont;}
 
 a {
 	text-decoration: none;
@@ -63,11 +63,12 @@ section, .section {
   }
 }
 
-.wrapper {
+.page__wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 0 7.3%;
+  //background-color: #000;
 }
 
 .content-wrapper {
@@ -92,3 +93,24 @@ section, .section {
     max-width: smPhoneWidth;
   }
 }
+
+.btn-section {
+  .standart-heading__wrapper {
+    margin: 9.7% 0;
+  }
+  .content-box {
+    justify-content: space-between;
+    display: flex;
+    margin: 11.7% auto;
+    height: auto;
+    width: 77.8%;
+    //background-color: #000;
+  }  
+}
+
+
+
+@import "../blocks/block-heading/heading.scss";
+@import "../blocks/block-button/button.scss";
+@import "../blocks/red_theme.scss";
+@import "../blocks/green_theme.scss";

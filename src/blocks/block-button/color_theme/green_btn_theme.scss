@@ -1,0 +1,19 @@
+.green_btn_theme {
+	&:hover {
+		background-color: $primary-green;
+		border: 2px solid $dark-green;
+		border-bottom-width: 8px;
+		> * {
+			color: $default-color;
+		}
+	}
+	&:active {
+		border-color: $primary-green;
+	}
+	background-color: $default-color;
+	border: 2px solid $primary-green;
+	border-bottom-width: 8px;
+	> * {
+		color: $primary-green;
+	}
+}

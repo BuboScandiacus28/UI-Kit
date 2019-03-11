@@ -1,0 +1,20 @@
+.standart-btn {
+	width: 25.3%;
+	text-align: center;
+	.standart-btn__wrapper {
+		border-radius: 6px;
+		.standart-btn__link {
+			padding: 7% 0;
+			font-size: rem(19.51);
+			letter-spacing: 4.2px;
+			text-transform: uppercase;
+			display: block;
+			font-family: $blackFont;
+		}
+	}
+}
+
+@import "small_button/small_button.scss";
+@import "color_theme/red_btn_theme.scss";
+@import "color_theme/green_btn_theme.scss";
+@import "ripple/ripple.scss";

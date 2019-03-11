@@ -1,0 +1,21 @@
+.red_btn_theme {
+	&:hover {
+		background-color: $primary-red;
+		border: 2px solid $dark-red;
+		border-bottom-width: 8px;
+		> * {
+			color: $default-color;
+		}
+	}
+	&:active {
+		border-color: $primary-red;
+	}
+	background-color: $default-color;
+	border: 2px solid $primary-red;
+	border-bottom-width: 8px;
+	> * {
+		color: $primary-red;
+	}
+}
+
+

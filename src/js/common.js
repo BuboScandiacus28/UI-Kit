@@ -1,0 +1,1 @@
+import '../blocks/block-button/ripple/ripple.js'

@@ -1,10 +1,25 @@
 doctype html
 html
-    head
-    meta(charset = 'utf-8')
-    meta(name='viewport', content="initial-scale=1.0, width=device-width")
-    title Webpack app
-    body
-        h1 test pug
-        p.light test fonts
-        p.bold test fonts
+	head
+		meta(charset = 'utf-8')
+		meta(name='viewport', content="initial-scale=1.0, width=device-width")
+		title Webpack app
+
+	include blocks/block-heading/heading.pug
+	include blocks/block-button/button.pug
+
+	body
+		main.page
+			.page__wrapper
+				section.btn-section
+					.btn-section__wrapper
+						+heading("standard buttons")
+						div(class="btn-section__content-box content-box")
+							+button("button", "#", "green_btn_theme ripple", "small_button")
+							+button("button", "#", "green_btn_theme ripple")
+							+button("button", "#", "red_btn_theme ripple")
+							+button("button", "#", "red_btn_theme ripple", "small_button")
+				
+
+				
+
