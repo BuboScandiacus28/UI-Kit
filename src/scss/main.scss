@@ -94,23 +94,34 @@ section, .section {
   }
 }
 
+.content-box {
+  justify-content: space-between;
+  display: flex;
+  margin: 5% auto;
+  width: 100%;
+}
+
 .btn-section {
   .standart-heading__wrapper {
     margin: 9.7% 0;
   }
   .content-box {
-    justify-content: space-between;
-    display: flex;
-    margin: 11.7% auto;
-    height: auto;
+    margin-top: 11.7%;
+    margin-bottom: 19.5%;
     width: 77.8%;
-    //background-color: #000;
   }  
 }
 
-
+.btn-arrow-section__content-box {
+  justify-content: center;
+  margin-top: 5.4%;
+  > * {
+    margin: 0 2%;
+  }
+}
 
 @import "../blocks/block-heading/heading.scss";
 @import "../blocks/block-button/button.scss";
+@import "../blocks/block-arrow-btn/arrow-btn.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";

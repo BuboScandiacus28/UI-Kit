@@ -7,6 +7,7 @@ html
 
 	include blocks/block-heading/heading.pug
 	include blocks/block-button/button.pug
+	include blocks/block-arrow-btn/arrow-btn.pug
 
 	body
 		main.page
@@ -19,6 +20,13 @@ html
 							+button("button", "#", "green_btn_theme ripple")
 							+button("button", "#", "red_btn_theme ripple")
 							+button("button", "#", "red_btn_theme ripple", "small_button")
+				section.btn-arrow-section
+					.btn-arrow-section__wrapper
+						+heading("arrow buttons")
+						div(class="btn-arrow-section__content-box content-box")
+							+arrow-btn("left", "green_theme_arrow")
+							+arrow-btn("right", "green_theme_arrow")
+
 				
 
 				

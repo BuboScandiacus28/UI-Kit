@@ -1,0 +1,25 @@
+.green_theme_arrow {
+	border: 6px solid $primary-green;
+	.arrow-btn__arrow {
+		&::after, &::before {
+			background-color: $primary-green;	
+		}
+	}
+	&:hover {
+		background-color: $primary-green;	
+		.arrow-btn__arrow {
+			&::after, &::before {
+				background-color: $default-color;	
+			}
+		}	
+	}
+	&:active {
+		background-color: $light-gray;
+		border-color: $light-gray;
+		.arrow-btn__arrow {
+			&::after, &::before {
+				background-color: $default-color;	
+			}
+		}	
+	}
+}

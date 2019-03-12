@@ -1,0 +1,36 @@
+.arrow-btn__wrapper {
+	width: 97px;
+	height: 97px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.arrow-btn__arrow {
+		position: relative;
+		&::before, &::after {
+			position: absolute;
+			top: -6.5px;
+			left: -8px;
+			height: 35px;
+			content: '';
+			width: 8px;
+			transform: rotate(315deg);
+		}
+		&::after {
+			top: -26.5px;
+			transform: rotate(45deg);
+		}
+	}
+	.arrow-btn__arrow.right {
+		&::before, &::after {
+			left: -4px;
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(315deg);
+		}
+	}
+}
+
+
+@import "arrow_theme/green_theme_arrow.scss";
