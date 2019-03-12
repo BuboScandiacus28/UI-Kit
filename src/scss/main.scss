@@ -97,7 +97,7 @@ section, .section {
 .content-box {
   justify-content: space-between;
   display: flex;
-  margin: 5% auto;
+  margin: 3.6% auto;
   width: 100%;
 }
 
@@ -120,8 +120,18 @@ section, .section {
   }
 }
 
+.chart-section {
+  padding: 0%;
+  .content-box {
+    padding: 0;
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+
 @import "../blocks/block-heading/heading.scss";
 @import "../blocks/block-button/button.scss";
 @import "../blocks/block-arrow-btn/arrow-btn.scss";
+@import "../blocks/block-svg-percentages/svg-percentages.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";

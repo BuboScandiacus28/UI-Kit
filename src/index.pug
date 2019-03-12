@@ -8,6 +8,8 @@ html
 	include blocks/block-heading/heading.pug
 	include blocks/block-button/button.pug
 	include blocks/block-arrow-btn/arrow-btn.pug
+	include blocks/block-svg-percentages/svg-percentages.pug
+	include blocks/block-svg-chart/svg-chart.pug
 
 	body
 		main.page
@@ -26,6 +28,15 @@ html
 						div(class="btn-arrow-section__content-box content-box")
 							+arrow-btn("left", "green_theme_arrow")
 							+arrow-btn("right", "green_theme_arrow")
+				section.chart-section
+					.chart-section__wrapper
+						+heading("percentages / pie chart")
+						div(class="chart-section__content-box content-box")
+							+percentages("0", ["#e75735", '0'])
+							+percentages("38", ["#e75735", '38'])
+							+percentages("62", ["#e75735", '62'])
+							+percentages("89", ["#e75735", '89'])
+							+chart([["#747474", "10"],["#e75735", "20"],["#4eb7a8", "30"]])
 
 				
 

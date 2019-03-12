@@ -1,0 +1,14 @@
+.donut {
+	.donut__text-container {
+		transform: translateY(0.50em);
+		font-family: $lightFont;
+		fill: $normall-gray;
+		.donut__text {
+			font-size: rem(14);
+		  line-height: 1;
+		  letter-spacing: -0.5px;
+		  text-anchor: middle;
+		  transform: translateY(-0.28em);
+		}
+	}
+}
