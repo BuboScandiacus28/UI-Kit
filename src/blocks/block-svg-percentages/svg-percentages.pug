@@ -1,10 +1,12 @@
-mixin percentages(text, content)
-	svg(width="100%" height="100%" viewBox="0 0 42 42" class="donut")
-		circle(class="donut__hole" cx="21" cy="21" r="15.91549430918954" fill="#fff")
-		circle(class="donut__ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="3")
+mixin percentages(text, content, animate)
+	svg(width="100%" height="100%" viewBox="0 0 42 42" class="percentages")
+		circle(class="percentages__hole" cx="21" cy="21" r="15.91549430918954" fill="#fff")
+		circle(class="percentages__ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="3")
 		- var size = content[1];
 		-	var color = content[0];
 		-	var residue = 100 - +size;
-		circle(class="donut__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke=color stroke-width="2" stroke-dasharray=size + " " + residue stroke-dashoffset="25")
-		g(class="donut__text-container")
-			text(x="50%" y="50%" class="donut__text")=text
+		circle(class="percentages__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke=color stroke-width="2" stroke-dasharray=size + " " + residue stroke-dashoffset="25")
+			if (animate)
+				animate(data-checked attributeName="stroke-dasharray" from="0 100" to=size + " " + residue dur="4s" begin="indefinite" fill="freeze")
+		g(class="percentages__text-container")
+			text(x="50%" y="50%" class="percentages__text")=text

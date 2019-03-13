@@ -32,11 +32,17 @@ html
 					.chart-section__wrapper
 						+heading("percentages / pie chart")
 						div(class="chart-section__content-box content-box")
-							+percentages("0", ["#e75735", '0'])
-							+percentages("38", ["#e75735", '38'])
-							+percentages("62", ["#e75735", '62'])
-							+percentages("89", ["#e75735", '89'])
-							+chart([["#747474", "10"],["#e75735", "20"],["#4eb7a8", "30"]])
+							+percentages("0", ["#e75735", '0'], true)
+							+percentages("38", ["#e75735", '38'], true)
+							+percentages("62", ["#e75735", '62'], true)
+							+percentages("89", ["#e75735", '89'], true)
+							+chart([
+								["#747474", "10"],
+								["#e75735", "20"],
+								["#4eb7a8", "30"]
+								],
+								true
+								)
 
 				
 

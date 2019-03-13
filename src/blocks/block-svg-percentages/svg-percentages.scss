@@ -1,9 +1,9 @@
-.donut {
-	.donut__text-container {
+.percentages {
+	.percentages__text-container {
 		transform: translateY(0.50em);
 		font-family: $lightFont;
 		fill: $normall-gray;
-		.donut__text {
+		.percentages__text {
 			font-size: rem(14);
 		  line-height: 1;
 		  letter-spacing: -0.5px;
