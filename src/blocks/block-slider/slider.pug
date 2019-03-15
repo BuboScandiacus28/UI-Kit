@@ -1,0 +1,13 @@
+mixin slider(theme, type)
+	div(id="slider" class="slider " + theme)
+		.slider__wrapper
+			.slider__thumb
+			if (type=="placeholder-slider")
+				.slider__placeholder
+					p.slider__placeholder-text="0"
+			else if (type=="ruler-slider")
+				.slider__tail
+				.slider__ruler
+					- for (var i = 0; i <= 100;)
+						p.slider__ruler-text=i
+						- i += 25;

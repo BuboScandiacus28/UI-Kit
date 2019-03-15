@@ -1,0 +1,17 @@
+.red_slider_theme {
+	.slider__wrapper {
+		background-color: $light-gray;
+		.slider__thumb {
+			background-color: $primary-red;
+		}
+		.slider__placeholder {
+			background-color: $primary-red;
+			&::before {
+				border-top-color: $primary-red;
+			}
+			.slider__placeholder-text {
+				color: $default-color;
+			}
+		}
+	}
+}

@@ -10,6 +10,7 @@ html
 	include blocks/block-arrow-btn/arrow-btn.pug
 	include blocks/block-svg-percentages/svg-percentages.pug
 	include blocks/block-svg-chart/svg-chart.pug
+	include blocks/block-slider/slider.pug
 
 	body
 		main.page
@@ -43,6 +44,12 @@ html
 								],
 								true
 								)
+				section.slider-section
+					.slider-section__wrapper
+						+heading("sliders")
+						div(class="slider-section__content-box content-box")
+							+slider("red_slider_theme", "placeholder-slider")
+							+slider("green_slider_theme", "ruler-slider")
 
 				
 

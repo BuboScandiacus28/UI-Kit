@@ -34,6 +34,5 @@ document.body.onclick = function(e) {
   ink.style.top = y + 'px';
   ink.style.left = x + 'px';
   ink.classList.add("animate");
-
 }
 

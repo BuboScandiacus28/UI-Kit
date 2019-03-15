@@ -5,7 +5,7 @@ mixin percentages(text, content, animate)
 		- var size = content[1];
 		-	var color = content[0];
 		-	var residue = 100 - +size;
-		circle(class="percentages__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke=color stroke-width="2" stroke-dasharray=size + " " + residue stroke-dashoffset="25")
+		circle(class="percentages__segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke=color stroke-width="1.8" stroke-dasharray=size + " " + residue stroke-dashoffset="25")
 			if (animate)
 				animate(data-checked attributeName="stroke-dasharray" from="0 100" to=size + " " + residue dur="4s" begin="indefinite" fill="freeze")
 		g(class="percentages__text-container")

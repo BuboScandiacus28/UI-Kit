@@ -67,7 +67,7 @@ section, .section {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0 7.3%;
+  margin: 0;
   //background-color: #000;
 }
 
@@ -94,6 +94,10 @@ section, .section {
   }
 }
 
+section > * {
+  margin: auto 7.3%;
+}
+
 .content-box {
   justify-content: space-between;
   display: flex;
@@ -103,29 +107,52 @@ section, .section {
 
 .btn-section {
   .standart-heading__wrapper {
-    margin: 9.7% 0;
+    margin: 9.7% 0%;
   }
   .content-box {
     margin-top: 11.7%;
     margin-bottom: 19.5%;
     width: 77.8%;
-  }  
+  } 
 }
 
-.btn-arrow-section__content-box {
-  justify-content: center;
-  margin-top: 5.4%;
-  > * {
-    margin: 0 2%;
+.btn-arrow-section {
+  .btn-arrow-section__content-box {
+    justify-content: center;
+    margin-top: 5.4%;
+    > * {
+      margin: 0 2%;
+    }
   }
 }
 
+
 .chart-section {
   padding: 0%;
-  .content-box {
-    padding: 0;
-    width: 100%;
-    margin-top: 2%;
+  .chart-section__wrapper {
+    margin: 0;
+    .chart-section__content-box.content-box {
+      justify-content: flex-start;
+      padding: 0;
+      margin-top: 2%;
+      > * {
+        margin: 0%;
+        width: 18%;
+        height: 33vh;
+      }
+      & > *:nth-child(1) {
+        margin: 0 0.5% 0 3%;
+      }
+    }
+  }
+}
+
+.slider-section {
+  padding: 0;
+  .slider-section__wrapper {
+    .content-box > * {
+      flex-basis: 44%;
+    }
   }
 }
 
@@ -133,5 +160,7 @@ section, .section {
 @import "../blocks/block-button/button.scss";
 @import "../blocks/block-arrow-btn/arrow-btn.scss";
 @import "../blocks/block-svg-percentages/svg-percentages.scss";
+@import "../blocks/block-slider/slider.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
+

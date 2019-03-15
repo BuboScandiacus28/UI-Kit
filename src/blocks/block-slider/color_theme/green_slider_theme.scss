@@ -1,0 +1,11 @@
+.green_slider_theme {
+	.slider__wrapper {
+		background-color: $light-gray;
+		.slider__thumb {
+			background-color: $primary-green;
+		}
+		.slider__tail {
+			background-color: $primary-green;
+		}
+	}
+}
