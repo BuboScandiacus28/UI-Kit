@@ -1,0 +1,21 @@
+mixin stages(args)
+	- var theme
+	if (args.theme)
+		- theme = args.theme
+	else
+		- theme = ""  
+	div(class="stages" id="stages")
+		div(class="stages__wrapper " + theme)
+			.stages__progress-bar
+			if (args.cardinality)
+				- var breakPointer = ""
+				- for(var i = 0; i < args.cardinality; i++)
+					if (i < args.currentPoint)
+						if (i == args.currentPoint - 1)
+							- breakPointer = "break-pointer" 
+						div(class="stages__dot active " + breakPointer)
+							h2=i + 1
+						- breakPointer = ""
+					else
+						div(class="stages__dot")
+							h2=i + 1

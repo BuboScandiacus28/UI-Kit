@@ -156,11 +156,20 @@ section > * {
   }
 }
 
+.stages-section {
+  .stages-section__wrapper {
+    .stages {
+      margin: 4.2% 0;
+    }
+  }
+}
+
 @import "../blocks/block-heading/heading.scss";
 @import "../blocks/block-button/button.scss";
 @import "../blocks/block-arrow-btn/arrow-btn.scss";
 @import "../blocks/block-svg-percentages/svg-percentages.scss";
 @import "../blocks/block-slider/slider.scss";
+@import "../blocks/block-stages/stages.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
 

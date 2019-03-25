@@ -1,0 +1,16 @@
+.stages_color_theme {
+	.stages__progress-bar {
+		background-color: $primary-red;
+	}
+	&::before {
+		background-color: $light-gray;
+	}
+	.stages__dot {
+		background-color: $light-gray;
+		color: $normall-gray;
+	}
+	.active {
+		background-color: $primary-red;
+		color: $default-color;
+	}
+}
