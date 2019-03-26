@@ -1,0 +1,42 @@
+.color_theme {
+	.check {
+		color: $default-color;
+	}
+	.error {
+		background-color: $primary-red;
+		&::after {
+			border: 5px solid transparent;
+			border-right: 5px solid $primary-red;
+		}
+	}
+	.success {
+		background-color: $primary-green;
+		&::after {
+			border: 5px solid transparent;
+			border-right: 5px solid $primary-green;
+		}
+	}
+	.input-field {
+		background-color: $light-gray;
+		border: 1px solid $light-gray;
+	}
+	@include placeholder {
+		color: $normall-gray;
+		font-family: $mainFont;
+	}
+	.form__submit {
+		background-color: $primary-green;
+		border: 0px solid $dark-green;
+		border-bottom-width: 5px;
+		color: $default-color;
+		&:hover {
+			background-color: $default-color;
+			border: 2px solid $primary-green;
+			border-bottom-width: 5px;
+			color: $primary-green;
+		}
+		&:active {
+			border-color: $dark-green;
+		}
+	}
+}

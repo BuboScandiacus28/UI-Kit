@@ -12,6 +12,7 @@ html
 	include blocks/block-svg-chart/svg-chart.pug
 	include blocks/block-slider/slider.pug
 	include blocks/block-stages/stages.pug
+	include blocks/block-form-elements/form.pug
 
 	body
 		main.page
@@ -64,6 +65,16 @@ html
 							currentPoint: "3",
 							theme: "stages_color_theme"
 						})
+
+				section.forms-section
+					.forms-section__wrapper
+						+heading("form elements")
+						.forms-section__content-container
+							.forms-section__form-example
+								+form({
+									theme: "color_theme"
+								})
+							.forms-section__form-component
 
 				
 

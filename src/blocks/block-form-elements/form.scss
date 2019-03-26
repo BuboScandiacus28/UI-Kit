@@ -1,0 +1,59 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	.form__container {
+		width: 100%;
+		margin-bottom: 4%;
+		display: flex;
+		min-height: 50px;
+		.check {
+			position: relative;
+			flex-grow: 1;
+			align-self: stretch;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			h3 {
+				font-size: rem(20);
+				font-family: $boldFont;
+				text-transform: uppercase;	
+			}
+			&::after {
+				position: absolute;
+				content: '';
+				top: 50%;
+				left: -10px;
+				margin-top: -5px;
+				z-index: 9999;
+			}
+		}
+	}
+	.input-field {
+		padding: 3.8% 0% 2.7% 4.8%;
+		border-radius: 5px;
+		margin-right: 10px;
+		width: 73%;
+	}
+	.form__message {
+		min-height: 170px;
+		resize: none;
+		width: 100%;
+		padding-top: 3.4%;
+		margin-bottom: 4%;
+	}
+	@include placeholder {
+		font-size: rem(25);
+		letter-spacing: 0.65px;
+	}
+	.form__submit {
+		border-radius: 5px;
+		width: 41%;
+		margin-left: 59%;
+		padding: 2.5% 0;
+		font-size: rem(23.42);
+		font-family: $boldFont;
+	}
+}
+
+@import "/color_theme/color_theme.scss";

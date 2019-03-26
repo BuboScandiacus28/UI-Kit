@@ -68,7 +68,6 @@ section, .section {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  //background-color: #000;
 }
 
 .content-wrapper {
@@ -164,12 +163,28 @@ section > * {
   }
 }
 
+.forms-section {
+  padding: 10px 0;
+  .forms-section__wrapper {
+    .forms-section__content-container {
+      margin: 8% 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .forms-section__form-example {
+        flex-basis: 48.4%;
+      }
+    }
+  }  
+}
+
 @import "../blocks/block-heading/heading.scss";
 @import "../blocks/block-button/button.scss";
 @import "../blocks/block-arrow-btn/arrow-btn.scss";
 @import "../blocks/block-svg-percentages/svg-percentages.scss";
 @import "../blocks/block-slider/slider.scss";
 @import "../blocks/block-stages/stages.scss";
+@import "../blocks/block-form-elements/form.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
 

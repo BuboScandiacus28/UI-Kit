@@ -1,0 +1,16 @@
+mixin form-check()
+	div(class="check error" style="display: none") 
+		h3="error"
+	div(class="check success" style="display: none")
+		h3="thanks"
+
+mixin form(args)
+	form(class="form " + args.theme action="#" novalidate)
+		div(class="form__name-container form__container")
+			input(class="form__name input-field" type="text" placeholder="Your Name" required)
+			+form-check()
+		div(class="form__email-container form__container")
+			input(class="form__email input-field" type="email" placeholder="Your Email" required)
+			+form-check()
+		textarea(class="form__message input-field" placeholder="Your Message")
+		input(class="form__submit" type="submit" value="SUBMIT")
