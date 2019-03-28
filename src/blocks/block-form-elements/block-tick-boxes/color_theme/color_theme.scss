@@ -1,0 +1,23 @@
+.tcb-theme {
+
+    + .tcb-btn {
+        background: $light-gray;
+        border-radius: 2em;
+        padding: 1%;
+        transition: all .4s ease;
+        &:after,
+        &:before {
+            background: $normall-gray;
+            transition: all .2s ease;
+        }
+    }
+
+    &:checked + .tcb-btn {
+        background: $primary-green;
+    }
+
+    &:checked + .tcb-btn:after,
+    &:checked + .tcb-btn:before {
+        background: $default-color;
+    }
+}

@@ -177,11 +177,18 @@ section > * {
       .forms-section__form-component {
         text-align: center;
         flex-basis: 47.25%;
-        .standart-heading {
-          line-height: 150%;
+        .forms-section__toggles {
+          .standart-heading {
+            line-height: 150%;
+          }
+          .tg-container {
+            margin: 12.1% 0 12.4% 0;
+          }
         }
-        .tg-container {
-          margin: 12.1% 0;
+        .forms-section__tick-boxes {
+          .tcb-container {
+            margin-top: 10.5%;
+          }
         }
       }
     }
