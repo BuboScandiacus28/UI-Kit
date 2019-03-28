@@ -16,7 +16,7 @@ name.addEventListener('input', function() {
 		error.style.display = "flex";
 		success.style.display = "none";
 	}
-});
+}, false);
 
 email.addEventListener('input', function() {
 	var error = email.parentElement.getElementsByClassName("error")[0];
@@ -34,16 +34,14 @@ email.addEventListener('input', function() {
 }, false);
 
 form.addEventListener('submit', function(e) {
-	var error = parentElement.getElementsByClassName("error")[0];
-	var success = parentElement.getElementsByClassName("success")[0];
 	if (!email.validity.valid) {
-		email.error.style.display = "flex";
-		email.success.style.display = "none";
+		email.parentElement.getElementsByClassName("error")[0].style.display = "flex";
+		email.parentElement.getElementsByClassName("success")[0].style.display = "none";
     e.preventDefault();
   }
   if (!name.validity.valid) {
-  	name.error.style.display = "flex";
-  	name.success.style.display = "none";
+  	name.parentElement.getElementsByClassName("error")[0].style.display = "flex";
+  	name.parentElement.getElementsByClassName("success")[0].style.display = "none";
     e.preventDefault();
   }
 }, false);

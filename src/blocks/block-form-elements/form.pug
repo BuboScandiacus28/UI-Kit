@@ -1,11 +1,14 @@
+
+include block-toggles/toggles.pug
+
 mixin form-check()
 	div(class="check error" style="display: none") 
 		h3="error"
 	div(class="check success" style="display: none")
-		h3="thanks"
+		h3="thanks!"
 
 mixin form(args)
-	form(class="form " + args.theme action="#" novalidate)
+	form(class="form " + args.theme action="##" novalidate)
 		div(class="form__name-container form__container")
 			input(class="form__name input-field" type="text" placeholder="Your Name" required)
 			+form-check()

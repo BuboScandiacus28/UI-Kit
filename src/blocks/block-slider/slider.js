@@ -45,7 +45,7 @@
 
       document.addEventListener('mouseup', sliderMouseup);
 
-      return false; // disable selection start (cursor change)
+      return; // disable selection start (cursor change)
     };
   });
 
@@ -53,7 +53,7 @@
     var thumbElem = e.target;
     if (thumbElem.classList.contains('slider__thumb')) {
       alert(1);
-      return false;
+      return;
     }
   });
 

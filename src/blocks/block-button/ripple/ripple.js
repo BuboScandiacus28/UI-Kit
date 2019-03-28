@@ -2,7 +2,7 @@ var parent, ink, d, x, y;
 document.body.onclick = function(e) {
   var target = e.target;
   while(true) {
-    if(target.tagName == "BODY") return false;
+    if(target.tagName == "BODY") return;
     if(target.classList.contains("ripple")) break;
     else target = target.parentElement;  
   }

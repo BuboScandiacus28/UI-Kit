@@ -1,0 +1,64 @@
+
+.tg-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.tgl {
+    display: none;
+
+    // add default box-sizing for this scope
+    &,
+    &:after,
+    &:before,
+    & *,
+    & *:after,
+    & *:before,
+    & + .tgl-btn {
+        box-sizing: border-box;
+        &::selection {
+            background: none;
+        }
+    }
+
+    + .tgl-btn {
+        outline: 0;
+        display: block;
+        width: 6.5em;
+        height: 2.5em;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        &:after,
+        &:before {
+            position: relative;
+            display: block;
+            content: "";
+            width: 32%;
+            height: 100%;
+            top: 0%;
+        }
+
+        &:after {
+            left: 0;
+            top: -100%;
+        }
+
+        &:before {
+           content: "OFF"; 
+           left: 42%;
+        }
+    }
+
+    &:checked + .tgl-btn:after {
+        left: 66%;
+    }
+
+    &:checked + .tgl-btn:before {
+        left: 15%;
+        content: "ON";
+    }
+
+}
+
+@import "/color_theme/color_theme.scss";
