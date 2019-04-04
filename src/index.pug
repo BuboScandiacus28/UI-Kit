@@ -13,6 +13,7 @@ html
 	include blocks/block-slider/slider.pug
 	include blocks/block-stages/stages.pug
 	include blocks/block-form-elements/form.pug
+	include blocks/block-search/search.pug
 
 	body
 		main.page
@@ -85,6 +86,24 @@ html
 									+tick-boxes({
 										theme: "tcb-theme"
 									})
+
+				section.profile-search-list
+					.profile-search-list__wrapper
+						.search-drop-down-section
+							.search-drop-down-section__wrapper
+								+heading("search / drop down")
+								.search-drop-down-section__content
+									+search({
+										theme: "search_color_theme",
+										file: "##",
+										method: "get",
+										hit: "Search"
+									})
+							
+							
+
+
+
 
 				
 

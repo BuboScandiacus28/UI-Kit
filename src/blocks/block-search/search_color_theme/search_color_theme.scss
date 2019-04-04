@@ -1,0 +1,25 @@
+.search_color_theme {
+	.search__input {
+		background-color: $light-gray;
+		border: 0px;
+	}
+	@include placeholder {
+		color: $normall-gray;
+		font-family: $mainFont;
+	}
+	.search__button {
+		background-color: $primary-red;
+		border: 0px;
+		.icon-search {
+			color: $default-color;
+		}
+	}
+}
+form.search_error {
+	.search__input {
+		background-color: $primary-red;
+	}
+	@include placeholder {
+		color: $default-color;
+	}
+}

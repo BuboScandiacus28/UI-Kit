@@ -1,0 +1,9 @@
+mixin search(args)
+	form.search(class=args.theme action=args.file method=args.method novalidate)
+		input.search__input(type="text" placeholder=args.hit)
+		button.search__button(type="submit")
+			svg.icon-search
+				use(xlink:href="assets/img/search.svg#icon-search")
+			
+
+			

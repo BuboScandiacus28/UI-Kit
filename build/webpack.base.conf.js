@@ -6,7 +6,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const PATHS = {
 	src: path.join(__dirname, '../src'),
 	dist: path.join(__dirname, '../dist'),
-	assets: 'assets/' 
+	assets: 'assets/',
+	img: 'img/'
 }
 
 module.exports = {
@@ -43,7 +44,7 @@ module.exports = {
 		}, {
 			test: /\.(eot|woff|ttf|svg)$/,
 			loader: 'file-loader',
-			exclude: [/img/],
+			exclude: [/img/, /blocks/],
 			options: {
 				publicPath: '../fonts/',
 				name: '[name].[ext]',
@@ -90,7 +91,7 @@ module.exports = {
     	filename: './index.html'
     }),
     new CopyWebpackPlugin([
-    	{ from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
+    	{ from: `${PATHS.src}/**/${PATHS.img}*`, to: `${PATHS.assets}img`, flatten: true, },
     	{ from: `${PATHS.src}/static`, to: ''}
     ]), 
   ]
