@@ -1,0 +1,20 @@
+.drop-down_color_theme {
+	.dropdown__active-item-container { 
+		background-color: $light-gray;
+		.dropdown__active-item {
+			color: $normall-gray;
+		}
+		.dropdown__arrow {
+			background-color: $primary-green;
+			&:after, &:before {
+				background-color: $default-color;
+			}
+		}
+	}
+	.dropdown__list {
+		background-color: $primary-green;
+		.a {
+			color: $default-color;
+		}
+	}
+}

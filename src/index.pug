@@ -14,6 +14,7 @@ html
 	include blocks/block-stages/stages.pug
 	include blocks/block-form-elements/form.pug
 	include blocks/block-search/search.pug
+	include blocks/block-drop-down/drop-down.pug
 
 	body
 		main.page
@@ -92,12 +93,32 @@ html
 						.search-drop-down-section
 							.search-drop-down-section__wrapper
 								+heading("search / drop down")
-								.search-drop-down-section__content
+								.search-drop-down-section__search
 									+search({
 										theme: "search_color_theme",
 										file: "##",
 										method: "get",
 										hit: "Search"
+									})
+								.search-drop-down-section__drop-down
+									+dropdown({
+										theme: "drop-down_color_theme",
+										mainText: "Choose An Option",
+										itemList: [
+											{
+												href: "##",
+												text: "This is option 1"
+											}, {
+												href: "##",
+												text: "This is option 2"
+											}, {
+												href: "##",
+												text: "This is option 3"
+											}, {
+												href: "##",
+												text: "This is option 4"
+											}
+										]
 									})
 							
 							

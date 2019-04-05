@@ -209,8 +209,11 @@ section > * {
             }
           }
         }
-        .search-drop-down-section__content {
+        .search-drop-down-section__search {
           margin-top: 6.7%;
+        }
+        .search-drop-down-section__drop-down {
+          margin-top: 21%;
         }
       } 
     }
@@ -226,6 +229,7 @@ section > * {
 @import "../blocks/block-stages/stages.scss";
 @import "../blocks/block-form-elements/form.scss";
 @import "../blocks/block-search/search.scss";
+@import "../blocks/block-drop-down/drop-down.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
 

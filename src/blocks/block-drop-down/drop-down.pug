@@ -1,0 +1,10 @@
+mixin dropdown(args)
+	.dropdown
+		.dropdown__wrapper(class=args.theme)
+			.dropdown__active-item-container
+				span.dropdown__active-item.item=args.mainText
+				.dropdown__arrow
+			ul.dropdown__list.close
+				each val in args.itemList
+					li.li.item
+						a.a(href=val.href)=val.text

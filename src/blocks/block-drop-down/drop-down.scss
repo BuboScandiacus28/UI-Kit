@@ -1,0 +1,60 @@
+@import "drop-down_color_theme/drop-down_color_theme.scss";
+
+.dropdown {
+	.dropdown__wrapper {
+		font-size: rem(25);
+		letter-spacing: 1px;
+		.dropdown__active-item-container {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			border-radius: 5px;
+			.dropdown__arrow {
+				border-radius: 0 5px 5px 0;
+				align-self: stretch;
+				position: relative;
+				width: 11.8%;
+				min-width: 50px;
+				
+				display: flex;
+				align-items: center;
+				&:after, &:before {
+					content: '';
+					position: absolute;
+					width: 20px;
+					height: 5px;
+					margin-left: 50%;
+				}
+				&:after {
+					transform: rotate(45deg) translate(-10.5px, 10.5px);
+				}
+				&:before {
+					transform: rotate(-45deg) translate(-3px, -3px);
+				}
+			}
+		}
+		.dropdown__list {
+			border-radius: 0 0 5px 5px;
+			.li {
+				display: flex;
+				justify-content: flex-start;
+			}
+		}
+		.dropdown__list.close {
+			display: none;
+		}
+		.item {
+			padding: 2% 0% 2% 4.8%;
+			min-height: 50px;
+		}
+	}
+}
+
+div.dropdown.list-active {
+	.dropdown__active-item-container {
+		border-radius: 5px 5px 0 0;
+		.dropdown__arrow {
+			border-radius: 0 5px 0 0;
+		}
+	}
+}
