@@ -198,8 +198,10 @@ section > * {
 
 .profile-search-list {
   .profile-search-list__wrapper {
+    display: flex;
+    justify-content: space-between;
     .search-drop-down-section {
-      width: 48.5%;
+      flex-basis: 48.5%;
       .search-drop-down-section__wrapper {
         text-align: center;
         .standart-heading {
@@ -217,6 +219,15 @@ section > * {
         }
       } 
     }
+    .user-profile-section {
+      flex-basis: 48.5%;
+      .user-profile-section__content {
+        margin: 10% 1% 0 7%;
+        & > *:nth-child(even) {
+          margin-top: 10%;
+        }
+      }
+    }
   }
 }
 
@@ -230,6 +241,7 @@ section > * {
 @import "../blocks/block-form-elements/form.scss";
 @import "../blocks/block-search/search.scss";
 @import "../blocks/block-drop-down/drop-down.scss";
+@import "../blocks/block-user-profile/user-profile.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
 

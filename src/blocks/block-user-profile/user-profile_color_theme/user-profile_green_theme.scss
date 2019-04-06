@@ -1,0 +1,19 @@
+.user-profile_green_theme {
+	.user-profile__user-img-container {
+		border: 8px solid $light-gray;
+	}
+	.user-profile__user-inf-container {
+		background-color: $primary-green;
+		color: $default-color;
+		&:after {
+			border: 10px solid transparent;
+			border-right: 10px solid $primary-green;
+		}
+		.user-profile__user-name {
+			font-family: $lightFont;
+		}
+		.user-profile__a {
+			fill: $default-color;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.user-profile_red_theme {
+	.user-profile__user-img-container {
+		border: 8px solid $light-gray;
+	}
+	.user-profile__user-inf-container {
+		background-color: $light-gray;
+		&:after {
+			border: 10px solid transparent;
+			border-right: 10px solid $light-gray;
+		}
+		.user-profile__user-name {
+			color: $primary-red;
+			font-family: $lightFont;
+		}
+		.user-profile__a {
+			&:nth-child(even) {
+				fill: $primary-red;
+			}
+		}
+	}
+}

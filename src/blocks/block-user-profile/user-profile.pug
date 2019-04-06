@@ -1,0 +1,13 @@
+mixin user-profile(args)
+	.user-profile
+		.user-profile__wrapper(class=args.theme)
+			.user-profile__user-img-container
+				img.user-profile__user-img(src=args.img)
+			.user-profile__user-inf-container
+				h3.user-profile__user-name=args.name
+				h4.user-profile__user_job=args.job
+				.user-profile__href-container
+					each val in args.linkList
+						a.user-profile__a(href=val.href)
+							svg.user-profile__icon
+								use(xlink:href=val.icon)

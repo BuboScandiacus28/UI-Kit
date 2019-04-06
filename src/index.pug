@@ -15,6 +15,7 @@ html
 	include blocks/block-form-elements/form.pug
 	include blocks/block-search/search.pug
 	include blocks/block-drop-down/drop-down.pug
+	include blocks/block-user-profile/user-profile.pug
 
 	body
 		main.page
@@ -120,8 +121,46 @@ html
 											}
 										]
 									})
-							
-							
+						.user-profile-section
+							.user-profile-section__wrapper
+								+heading("user profile")
+								.user-profile-section__content
+									+user-profile({
+										theme: "user-profile_red_theme",
+										img: "assets/img/user-man.png",
+										name: "John Smith",
+										job: "ux designer",
+										linkList: [
+											{
+												href: "##",
+												icon: "assets/img/facebook.svg#icon-facebook"
+											}, {
+												href: "##",
+												icon: "assets/img/twitter.svg#icon-twitter"
+											}, {
+												href: "##",
+												icon: "assets/img/dribbble.svg#icon-dribbble"
+											}
+										]
+									})
+									+user-profile({
+										theme: "user-profile_green_theme",
+										img: "assets/img/user-woman.png",
+										name: "Sarah Brown",
+										job: "developer",
+										linkList: [
+											{
+												href: "##",
+												icon: "assets/img/facebook.svg#icon-facebook"
+											}, {
+												href: "##",
+												icon: "assets/img/twitter.svg#icon-twitter"
+											}, {
+												href: "##",
+												icon: "assets/img/dribbble.svg#icon-dribbble"
+											}
+										]
+									})
 
 
 
