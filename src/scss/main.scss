@@ -231,6 +231,20 @@ section > * {
   }
 }
 
+.news-events-section {
+  .news-events-section__wrapper {
+    margin-top: 7%;
+    .news-events-section__content {
+      margin-top: 5.5%;
+      display: flex;
+      justify-content: space-between;
+      & > * {
+        width: 48.5%;
+      }
+    }
+  }
+}
+
 
 @import "../blocks/block-heading/heading.scss";
 @import "../blocks/block-button/button.scss";
@@ -242,6 +256,7 @@ section > * {
 @import "../blocks/block-search/search.scss";
 @import "../blocks/block-drop-down/drop-down.scss";
 @import "../blocks/block-user-profile/user-profile.scss";
+@import "../blocks/block-news-events/news-events.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
 

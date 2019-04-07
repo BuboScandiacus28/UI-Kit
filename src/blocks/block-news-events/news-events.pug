@@ -1,0 +1,18 @@
+mixin news-events(args)
+	.news-events
+		.news-events__wrapper(class=args.theme)
+			.news-events__img-container
+				img.news-events__img(src=args.img)
+			.news-events__content
+				- if(args.type=="news")
+					.news-events__news
+						h1.news-events__title=args.title
+						h4.news-events__date=args.date
+						p.news-events__text=args.text
+				- if(args.type=="events")
+					.news-events__event
+						h1.news-events__date=args.date
+							span.news-events__month=args.month
+						h4.news-events__title=args.title
+						p.news-events__text=args.text
+						a.news-events__btn(href=args.href)=args.linkText

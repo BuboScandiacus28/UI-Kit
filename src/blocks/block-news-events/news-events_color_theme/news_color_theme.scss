@@ -1,0 +1,11 @@
+.news_color_theme {
+	.news-events__content {
+		color: $default-color;
+	}
+	.news-events__news {
+		background-color: $primary-red;
+		.news-events__title {
+			font-family: $lightFont;
+		}
+	}
+}

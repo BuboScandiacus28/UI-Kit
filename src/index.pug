@@ -16,6 +16,7 @@ html
 	include blocks/block-search/search.pug
 	include blocks/block-drop-down/drop-down.pug
 	include blocks/block-user-profile/user-profile.pug
+	include blocks/block-news-events/news-events.pug
 
 	body
 		main.page
@@ -161,6 +162,30 @@ html
 											}
 										]
 									})
+
+				section.news-events-section
+					.news-events-section__wrapper
+						+heading("news & events")
+						.news-events-section__content
+							+news-events({
+								theme: "news_color_theme",
+								img: "assets/img/news-img.png",
+								type: "news",
+								title: "It's all going downhill",
+								date: "24 august 2013",
+								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros."
+							})
+							+news-events({
+								theme: "events_color_theme",
+								img: "assets/img/event-img.png",
+								type: "events",
+								date: "24",
+								month: "Aug",
+								title: "this is the title",
+								text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+								href: "##",
+								linkText: "add to calendar"
+							})
 
 
 

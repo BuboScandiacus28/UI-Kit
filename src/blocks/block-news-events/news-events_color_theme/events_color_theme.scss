@@ -1,0 +1,13 @@
+.events_color_theme {
+	.news-events__content {
+		color: $default-color;
+	}
+	.news-events__event {
+		background-color: $primary-green;
+		.news-events__btn {
+			background-color: $default-color;
+			color: $dark-green;
+			border-bottom: 6px solid $dark-green;
+		}
+	}
+}
