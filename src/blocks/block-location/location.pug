@@ -1,0 +1,6 @@
+mixin YandexMap(args)
+	.location
+		.location__wrapper(class=args.theme)
+			script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8110d007-3e74-4efe-8ec5-c9f62f20e5c4" type="text/javascript")
+			.location__map#map
+			

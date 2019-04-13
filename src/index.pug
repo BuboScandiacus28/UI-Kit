@@ -17,6 +17,7 @@ html
 	include blocks/block-drop-down/drop-down.pug
 	include blocks/block-user-profile/user-profile.pug
 	include blocks/block-news-events/news-events.pug
+	include blocks/block-location/location.pug
 
 	body
 		main.page
@@ -186,6 +187,15 @@ html
 								href: "##",
 								linkText: "add to calendar"
 							})
+
+				section.location-section
+					.location-section__wrapper
+						+heading("location")
+						.location-section__content
+							+YandexMap({
+								theme: "location_color_theme"
+							})
+
 
 
 

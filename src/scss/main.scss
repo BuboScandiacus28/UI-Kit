@@ -245,6 +245,14 @@ section > * {
   }
 }
 
+.location-section {
+  .location-section__wrapper {
+    margin-top: 0.3%;
+    .location-section__content {
+      margin-top: 5%;
+    }
+  }
+}
 
 @import "../blocks/block-heading/heading.scss";
 @import "../blocks/block-button/button.scss";
@@ -257,6 +265,7 @@ section > * {
 @import "../blocks/block-drop-down/drop-down.scss";
 @import "../blocks/block-user-profile/user-profile.scss";
 @import "../blocks/block-news-events/news-events.scss";
+@import "../blocks/block-location/location.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
 

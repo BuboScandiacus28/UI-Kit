@@ -1,0 +1,52 @@
+.location {
+	.location__wrapper {
+		.location__map {
+			width: 100%;
+			height: 81vh;
+			padding: 0;
+			margin: 0;
+			border-raidus: 10px;
+			overflow: hidden;
+			* {
+				padding: 0;
+			}
+			.location__balloon {
+				width: 100%;
+				height: 90%;
+				padding: 0 4% 0 5%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				.location__text {
+					margin-top: -8px;
+					font-size: rem(55);
+					font-family: $lightFont;
+					letter-spacing: 1.8px;
+					word-spacing: -6px;
+				}
+				.location__adress {
+					width: 30%;
+					margin-top: 2%;
+					line-height: 125%;
+					text-transform: uppercase;
+					font-size: rem(25);
+					margin-left: 4.5%;
+					letter-spacing: 0.8px;
+					word-spacing: 1px;
+				}
+				.icon {
+					height: 35%;
+					width: 5%;
+				}
+				.location__my-location-icon {
+					margin-left: 32%;
+				}
+				.location__pin-icon {
+					margin-left: 2.8%;
+				}
+			}
+		}
+	}
+}
+
+@import "location_color_theme/location_color_theme.scss";
