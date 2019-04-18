@@ -1,0 +1,24 @@
+mixin calendar(args)
+  .calendar
+    .calendar__wrapper(class=args.theme)
+      table.calendar__table#calendar
+        thead.thead
+          tr.calendar__number-container
+            td.calendar__today(colspan="7")
+          tr.calendar__month-container
+            td.calendar__left-arrow
+            td.calendar__month(colspan="5")
+            td.calendar__right-arrow
+          tr.calendar__weekday-container
+            td="mon"
+            td="tue"
+            td="wed"
+            td="thu"
+            td="fri"
+            td="sat"
+            td="sun"
+        tbody.calendar__content
+        tbody.calendar__today-container
+          tr
+            td.calendar__go-to-today(colspan="7")="today"
+

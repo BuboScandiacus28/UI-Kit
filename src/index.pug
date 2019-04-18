@@ -18,6 +18,7 @@ html
 	include blocks/block-user-profile/user-profile.pug
 	include blocks/block-news-events/news-events.pug
 	include blocks/block-location/location.pug
+	include blocks/block-calendar/calendar.pug
 
 	body
 		main.page
@@ -195,6 +196,18 @@ html
 							+YandexMap({
 								theme: "location_color_theme"
 							})
+
+				section.calendar-messaging
+					.calendar-messaging__wrapper
+						.calendar-section
+							.calendar-section__wrapper
+								+heading("calendar")
+								.calendar-section__content
+									+calendar({
+										theme: "calendar_color_theme"
+									})
+						.messaging-section
+							
 
 
 

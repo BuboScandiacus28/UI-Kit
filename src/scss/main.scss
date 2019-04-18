@@ -254,6 +254,19 @@ section > * {
   }
 }
 
+.calendar-messaging {
+  .calendar-messaging__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .calendar-section {
+      flex-basis: 47%;
+      .calendar-section__content {
+        margin-top: 8%;
+      }
+    }
+  }
+}
+
 @import "../blocks/block-heading/heading.scss";
 @import "../blocks/block-button/button.scss";
 @import "../blocks/block-arrow-btn/arrow-btn.scss";
@@ -266,6 +279,7 @@ section > * {
 @import "../blocks/block-user-profile/user-profile.scss";
 @import "../blocks/block-news-events/news-events.scss";
 @import "../blocks/block-location/location.scss";
+@import "../blocks/block-calendar/calendar.scss";
 @import "../blocks/red_theme.scss";
 @import "../blocks/green_theme.scss";
 

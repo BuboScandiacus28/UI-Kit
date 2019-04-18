@@ -1,0 +1,42 @@
+.calendar_color_theme {
+	.calendar__table {
+		.thead {
+			background-color: $primary-red;
+			color: $default-color;
+			.calendar__month-container {
+				background-color: $dark-red;
+				td:nth-child(odd) {
+					&::before, &::after {
+						background-color: $default-color;
+					}
+				}
+			}
+			.calendar__weekday-container {
+				td {
+					font-family: $boldFont;
+				}
+			}
+		}
+		.calendar__content {
+			td {
+				border: 1px solid $default-color;
+				background-color: $light-gray;
+				font-family: $boldFont;
+			}
+			td.calendar__other-month {
+				color: $default-color;
+			}
+			td.today {
+				background-color: $primary-red;
+				color: $default-color;
+			}
+		}
+		.calendar__today-container {
+			td {
+				background-color: $normall-gray;
+				font-family: $blackFont;
+			}
+		}
+	}
+}
+

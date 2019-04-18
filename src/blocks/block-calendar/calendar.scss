@@ -1,0 +1,78 @@
+.calendar {
+  .calendar__wrapper {
+    .calendar__table {
+      border-spacing: 0;
+      td {
+        text-align: center;
+      }
+      .thead {
+        .calendar__number-container {
+          td {
+            font-size: rem(154);
+            line-height: 100%;
+            padding: 5.5% 0 5% 0;
+          }
+        }
+        .calendar__month-container {
+          td {
+            font-size: rem(45);
+            padding: 2% 0;
+          } 
+          td:nth-child(odd) {
+            position: relative;
+            &::before, &::after {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-top: -15px;
+              height: 20px;
+              content: '';
+              width: 5px;
+              transform: rotate(315deg);
+            }
+            &::after {
+              margin-top: -4px;
+              transform: rotate(45deg);
+            }
+          }
+          td.calendar__left-arrow {
+            &::before, &::after {
+              margin-left: -10px;
+              transform: rotate(45deg);
+            }
+            &::after {
+              transform: rotate(315deg);
+            }
+          }
+        }
+        .calendar__weekday-container {
+          td {
+            text-transform: uppercase;
+            padding: 2.5% 0;
+            width: 14.28571428571429%;
+          }
+        }
+      }
+      .calendar__content {
+        td {
+          font-size: rem(35);
+          padding: 2.7% 0;
+        }
+        td:nth-child(1) {
+          border-left: 0px;
+        }
+      }
+      .calendar__today-container {
+        td {
+          text-align: left;
+          font-size: rem(25);
+          padding: 5% 0 5% 8%;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+@import "calendar_color_theme/calendar_color_theme.scss";
